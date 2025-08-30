@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState, useCallback } from "react";
 import { AuthContext } from "../Context/AuthContext";
-import { FaUsers, FaExclamationTriangle, FaUserPlus, FaSyncAlt, FaStar } from "react-icons/fa";
+import { FaUsers, FaExclamationTriangle, FaUserPlus,  } from "react-icons/fa";
 import style from "./Home.module.css";
 import { useNavigate } from "react-router-dom";
 
