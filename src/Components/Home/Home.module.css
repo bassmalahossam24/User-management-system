@@ -1,0 +1,79 @@
+/* General Card */
+.card {
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #fff, #f9f9f9);
+  color: #333;
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: fadeIn 0.8s ease forwards;
+}
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* Card Icons */
+.card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+.card-icon.text-warning { background: #fff3cd; color: #ffc107; }
+.card-icon.text-success { background: #d4edda; color: #28a745; }
+.card-icon.text-primary { background: #cce5ff; color: #007bff; }
+.card-icon.text-danger { background: #f8d7da; color: #dc3545; }
+
+/* Buttons */
+.btn-gradient {
+  background: linear-gradient(90deg,#ff9800,#ffc107);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  animation: btnFadeIn 1s ease forwards;
+}
+.btn-gradient:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* Floating Shapes */
+@keyframes float0 { 0% { transform: translateY(0);} 50% { transform: translateY(-10px);} 100% { transform: translateY(0);} }
+@keyframes float1 { 0% { transform: translateY(0);} 50% { transform: translateY(-15px);} 100% { transform: translateY(0);} }
+@keyframes float2 { 0% { transform: translateY(0);} 50% { transform: translateY(-12px);} 100% { transform: translateY(0);} }
+@keyframes float3 { 0% { transform: translateY(0);} 50% { transform: translateY(-8px);} 100% { transform: translateY(0);} }
+@keyframes float4 { 0% { transform: translateY(0);} 50% { transform: translateY(-20px);} 100% { transform: translateY(0);} }
+@keyframes float5 { 0% { transform: translateY(0);} 50% { transform: translateY(-14px);} 100% { transform: translateY(0);} }
+
+/* Highlights hover */
+.hover-card:hover img {
+  transform: scale(1.12);
+  transition: transform 0.4s ease;
+}
+.hover-card .card-body {
+  transition: transform 0.3s ease;
+}
+.hover-card:hover .card-body {
+  transform: translateY(-5px);
+}
+
+/* FadeIn Animation */
+@keyframes fadeIn { 0% {opacity:0; transform: translateY(20px);} 100% {opacity:1; transform: translateY(0);} }
+@keyframes btnFadeIn { 0% {opacity:0; transform: translateY(10px);} 100% {opacity:1; transform: translateY(0);} }
+
+/* Chart bar rise */
+@keyframes barRise {
+  0% { height: 0; transform: translateY(200px); }
+  100% { height: var(--val-height); transform: translateY(calc(200px - var(--val-height))); }
+}
+.addBtn {
+  background: #feaf00;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}

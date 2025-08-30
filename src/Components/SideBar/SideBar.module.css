@@ -1,0 +1,15 @@
+.sidebarContainer{
+    background-color: rgba(242, 234, 225, 1);
+    position: static;
+}
+
+.menu :global(.ps-menu-button) {
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.menu :global(.ps-menu-button:hover) {
+  background-color: rgba(255, 193, 7, 0.15); 
+  color: #000;
+}
