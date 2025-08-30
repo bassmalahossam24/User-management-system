@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { FaRegTrashAlt } from "react-icons/fa";
 import { MdOutlineEdit } from "react-icons/md";
 import styles from "./UsersList.module.css";

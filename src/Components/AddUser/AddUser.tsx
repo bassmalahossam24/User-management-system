@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useEffect } from 'react'
+import  { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';

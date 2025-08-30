@@ -1,6 +1,6 @@
-import React, { useContext } from "react";
+import  { useContext } from "react";
 import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import style from "./SideBar.module.css";
 import { CiHome } from "react-icons/ci";
 import { FaArrowLeft, FaArrowRight, FaGraduationCap, FaUsers } from "react-icons/fa";
